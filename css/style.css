@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../images/home_banner.png);  /*..peditey automatic ga path teeskuntadi*/
+    background-position: center;                 
+    background-size: cover;         /*to cover entire home page, it crops if needed*/
+    position: relative;
+}
+
+/* Navbar starting */
+nav{
+    display: flex;
+    padding: 1% 4%;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+nav  img{
+    width: 250px;
+    padding-bottom: 7px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;     /*no bullets in links*/
+    display: inline-block;   /*used to display links horizonatally from vertical*/
+    padding:8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;  /*removes underlines*/
+    font-size: 15px;
+    
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0;             /*to hide navbar undelines before hover*/
+    height: 2px;
+    background: #c10505;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/* Navbar ending */
+
+/* home section text */
+.text-box{
+    width: 90%;
+    color: black;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+    font-weight: bold;
+}
+
+.text-box p{
+    margin: 10px 0 60px;
+    font-size: 14px;
+    font-weight: 400;
+}
+/*end of home section text*/
+
+.home-btn{
+    border: 1px solid #c10505;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 12px 34px;
+    color: black;
+    font-size: 13px;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 20rem;
+    margin-top: 20px;
+}
+
+.home-btn:hover{
+    border: 1px solid black;
+    color: white;
+    background: #c10505;
+    transition: 0.5s;
+    margin-top: 20px;
+}
+
+/* ---- offerings ------ */
+
+.offerings{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 30px;
+    background-image: url(../images/dots.png);
+}
+
+.offerings h1{
+    padding-bottom: 20px;
+}
+
+.offerings-para{
+    margin: 10px 0 60px;
+    font-size: 17px;
+    font-weight: 400;
+}
+.offerings-col img{
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+h1{
+ font-size: 40px;
+ font-weight: bold;
+}
+
+p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 15px;
+}
+
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.offerings-col{
+    flex-basis: 30%; /*initial size of flex item*/
+    background-color: #fff3f3;
+     border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 5px;
+    box-sizing: border-box; /*maintains actual width specified without taking exta soace*/
+    transition: 0.5s;
+}
+
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.offerings-col:hover{
+  box-shadow: 0 0 20px 0px #cc7a7a;
+}
+
+/* perfect source carousel */
+
+#carousel{
+    text-align: center;
+    background-color: #ef8172;
+    color: #fff;
+    margin-bottom: 50px;
+    height: 500px;
+}
+
+.carousel-item{
+    padding: 7% 15%;
+}
+
+.carousel-img{
+    width: 30%;
+   border-radius: 100%;
+   margin-top: 20px;
+}
+
+
+
+
+.vision h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #c10505;
+}
+
+.mission h2{
+    text-align: center;
+    font-weight: bold;
+    color: #c10505;
+}
+.vision img{
+    width: 40%;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.mission img{
+    width: 40%;
+    float: right;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.container{
+    margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+/* contact information */
+
+.contactInfo{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/contact-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.contactInfo h1{
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.contactInfo a{
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+/* footer */
+
+.footer{
+    background-color: #24262b;
+    padding: 70px 70px 0 0;
+    
+}
+
+.footer-container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 5px;
+    justify-content: space-between;
+    
+}
+
+.footer-col ul li{
+    list-style-type: none;
+    margin-bottom: 7px;
+}
+
+.footer-col ul li a{
+ text-decoration: none;
+ color: rgb(138, 128, 128);
+ 
+}
+
+.footer-col ul li a:hover{
+    color: #fff;
+    padding-left: 10px;
+    transition: 0.5s;
+}
+
+.footer-col ul{
+    padding-left: 0;
+    
+}
+
+
+.footer-col h4{
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+
+.socialMedia-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.rights{
+    text-align: center;
+}
+.rights p{
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+}
